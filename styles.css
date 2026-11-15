@@ -192,7 +192,7 @@ a:hover {
 #hero {
     min-height: 450px;
     padding: 120px 6% 60px;
-    background-image: url(images/main-background.png);
+    background-image: url(main-background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -531,7 +531,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: 36% 38% 26%;
     align-items: center;
-    background: url(images/why-us.png);
+    background: url(why-us.png);
     background-size: cover;
     background-position: center;
     color: white;
