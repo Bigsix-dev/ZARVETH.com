@@ -13,7 +13,7 @@
     <header>
         <div class="header">
             <span class="logo">
-                <img src="Zarveth Global Logistics Logo.png" alt="logo" class="logo-image">
+                <img src="images/Zarveth Global Logistics Logo.png" alt="logo" class="logo-image">
             </span>
 
              <button class="hamburger" aria-label="Open navigation menu">
@@ -23,16 +23,56 @@
             <nav class="nav-bar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html" class="drop-down">Our Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="track.html">Track Shipment</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
 
-            <button class="dropdown-btn"><i class="fa-solid fa-box"></i> Get a Qoute</button>
+            <div class="quote-dropdown">
+
+    <button class="quote-btn" id="quoteToggle" type="button">
+        Get a Quote
+        <i class="fa-solid fa-chevron-down"></i>
+    </button>
+
+    <div class="quote-form" id="quoteForm">
+
+        <h2>Request a Quote</h2>
+        <p>Tell us about your shipment and we'll prepare a quote for you.</p>
+
+        <form>
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Shipment Type</option>
+                <option>International Shipping</option>
+                <option>Domestic Delivery</option>
+                <option>Freight Forwarding</option>
+            </select>
+
+            <input type="text" placeholder="Pickup Location" required>
+
+            <input type="text" placeholder="Delivery Destination" required>
+
+            <input type="number" placeholder="Package Weight (kg)" min="0.1" step="0.1" required>
+
+            <textarea placeholder="Additional Information (Optional)"></textarea>
+
+            <button type="submit">Submit Request</button>
+
+        </form>
+
+    </div>
+
+</div>
           </div>  
-        </div>
     </header>
 
         <main>
@@ -44,30 +84,56 @@
             <h2>Global shipping made simple. </h2>
             <p>We connect businesses and individuals to the world through reliable air, sea and road transportation.</p>
             </div>
+<div class="hero-buttons">
 
-         <div class="hero-buttons">
-             <button class="hero-buttons">Track Your Shipment <i class="fa-solid fa-magnifying-glass"></i></button> <button>Explore Our Services <i class="fa-solid fa-arrow-right"></i></button>
-         </div>
+    <a href="track.html" class="hero-btn">
+        Track Your Shipment
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </a>
+
+    <a href="services.html" class="hero-btn">
+        Explore Our Services
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+</div>
     </section>
 
-    <section class="track-container">
-            <div class="track-info">
-            <span class="location-icon">
-                <i class="fa-solid fa-location-dot"></i>
-            </span>
+   
 
-            <h3>Track Your Shipment</h3>
-            <p>Enter your tracking number to get real-time updates.</p>
-        </div>
+<section class="track-container">
 
-        <div class="track-input">
-            <form action="">
-                <input type="text" id="tracking-number" placeholder="Enter your tracking number" autocomplete="off" required>
-            <button type="submit" class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-        </div>
-    
-    </section>
+    <div class="track-info">
+        <span class="location-icon">
+            <i class="fa-solid fa-location-dot"></i>
+        </span>
+
+        <h3>Track Your Shipment</h3>
+        <p>Enter your tracking number to get real-time updates.</p>
+    </div>
+
+    <div class="track-input">
+        <form id="trackingForm" action="track.html" method="GET">
+
+            <input
+                type="text"
+                id="trackingNumber"
+                name="trackingNumber"
+                placeholder="Enter your tracking number"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit" class="search" aria-label="Track shipment">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </form>
+    </div>
+
+</section>
+
+
     </main>
 
     <section class="services">
@@ -111,7 +177,7 @@
 
     <!-- Delivery Man -->
     <div class="delivery-man">
-        <img src="images/delivery-man.png" alt="ZARVETH delivery professional">
+        <img src="images/Smiling ZARVETH Courier Holding Package.png" alt="ZARVETH delivery professional">
     </div>
 
     <!-- Benefits -->
@@ -163,10 +229,10 @@
         <h3>Your Trusted Logistics Partner<br>
             Across the Globe.</h3>
 
-        <button type="button">
+        <a href="services.html" type="button">
             Get Started
             <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        </a>
 
     </div>
 
@@ -177,7 +243,7 @@
 
     <!-- Logo -->
     <div class="footer-logo">
-        <img src="Zarveth Global Logistics Logo.png"
+        <img src="images/background.png"
              alt="ZARVETH International Logistics">
     </div>
 
